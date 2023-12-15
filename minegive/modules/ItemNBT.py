@@ -8,7 +8,7 @@ class ItemNBT:
     """_ItemNBT represents the NBT data for any item in Minecraft.
     """
 
-    def __init__(self: ItemNBT, damage: int | None, unbreakable: bool | None, can_destroy: list[str] | None, custom_model_data: int | None, attribute_modifiers: list[dict] | None = None) -> None:
+    def __init__(self: ItemNBT, damage: int | None = None, unbreakable: bool | None = None, can_destroy: list[str] | None = None, custom_model_data: int | None = None, attribute_modifiers: list[dict] | None = None) -> None:
         """ Constructor of the class
 
         Args:

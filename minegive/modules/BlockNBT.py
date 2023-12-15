@@ -12,7 +12,7 @@ class BlockNBT(ItemNBT):
     """ The NBT of a block. Inherits from ItemNBT.
     """
 
-    def __init__(self: BlockNBT, damage: int | None, unbreakable: bool | None, can_destroy: list[str] | None, custom_model_data: int | None, attribute_modifiers: list[dict] | None = None,
+    def __init__(self: BlockNBT, damage: int | None = None, unbreakable: bool | None = None, can_destroy: list[str] | None = None, custom_model_data: int | None = None, attribute_modifiers: list[dict] | None = None,
                 can_place_on: list[str] | None = None, block_entity_tag: dict | None = None, block_state_tag: dict | None = None) -> None:
         """ The init method of the BlockNBT class.
 
