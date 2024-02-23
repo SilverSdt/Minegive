@@ -51,7 +51,7 @@ Lien vers le projet: [Minegive](https://github.com/SilverSdt/Minegive)
 - **V1.0.0**: Fonctionnement avec CLI
 - **V2.0.0**: Fonctionnement en mode CLI ou API
 - **V3.0.0**: Fonctionnement en mode CLI ou API avec un front
- - **???**: Création d'un docker pour le back et pour le front
+- **???**: Création d'un docker pour le back et pour le front
 
 ## Différentes méthodes et bonnes pratiques mises en place
 
@@ -84,7 +84,8 @@ Les commentaires suivront la formalisation de [**Pydoc**](https://docs.python.or
 
 Le projet étant en python, nous suivront la convention de bases de ce langage qu’est [**PEP8**](https://peps.python.org/pep-0008/), en effet, celui si décrit les différentes bonnes pratiques qui peuvent être utiliser dans un projet
 
-**exemple:**
+**Exemple:**
+
 - Convention de nommage
 - Architecture du projet
 - Arborescence des documents
@@ -106,13 +107,13 @@ Des [**pull requests**](https://github.com/SilverSdt/Minegive/pulls) seront fait
 
 Le **README.md** contiendra un guide permettant de simplifier les procédures de lancement du projet pour une utilisation simple.
 
-**note:** Finalement le README.md a était utilisé pour le compte-rendu, mais un maximum d'éléments explicatifs a quand même était implémenté.
+**Note:** Finalement le README.md a était utilisé pour le compte-rendu, mais un maximum d'éléments explicatifs a quand même était implémenté.
 
 ### Guide de création d'un environnement de développement
 
 Le **README.md** contiendra aussi un guide sur comment mettre en place son environnement de développement afin de garantir un environnement de travail sein et efficace.
 
-**note:** Finalement le README.md a était utilisé pour le compte-rendu
+**Note:** Finalement le README.md a était utilisé pour le compte-rendu
 
 ## Features
 
@@ -131,6 +132,7 @@ la **[structure](https://github.com/SilverSdt/Minegive/issues/7)** suis les [**b
 La [**classe Item**](https://github.com/SilverSdt/Minegive/issues/3) représente un item générique de Minecraft.
 
 Ils sont composées de:
+
 - d'un ID
 - d'un NBT
 - d'un quantité
@@ -140,6 +142,7 @@ Ils sont composées de:
 La [**classe Selector**](https://github.com/SilverSdt/Minegive/issues/2) représente un [**sélécteur**](https://minecraft.fandom.com/wiki/Target_selectors ) dans Minecrafts
 
 Il existe différent **type** de sélécteur:
+
 - **@e**: toutes les entités
 - **@p**: le joueur le plus proche
 - **@r**: un joueur aléatoire
@@ -148,6 +151,7 @@ Il existe différent **type** de sélécteur:
 - **@initiator**: le joueur qui a cliqué sur le dialogue du PNJ (_Version bedrock et éducation seulement_)
 
 Ils possèdent chaqu'un différents **attributs**:
+
 - Coordonnées 3D (XYZ)
 - Une distance (XYZ)
 - Une limite
@@ -159,6 +163,7 @@ Ils possèdent chaqu'un différents **attributs**:
 La [**classe NBT**](https://github.com/SilverSdt/Minegive/issues/5) est un [**format utilisé par Minecraft afin de stocker différentes données**](https://minecraft.fandom.com/fr/wiki/Format_NBT).
 
 La **classe ItemNBT** de base est composé comme suit:
+
 - Dégâts
 - Incassable ou non
 - La liste des éléments que l'objet peut détruire (_en mode aventure_)
@@ -166,6 +171,7 @@ La **classe ItemNBT** de base est composé comme suit:
 - Modificateurs d'attributs composé de: nom d'attribut, nom, opération, montant et [UUID](https://minecraft.fandom.com/wiki/Universally_unique_identifier)
 
 Mais pour les blocks, le NBT est différent et rajoute les valeurs suivantes:
+
 - la liste des blocks sur laquelle le block peut être posé.
 - block entity tag
 - block state tag
@@ -177,6 +183,7 @@ Certaines features ne sont pas encore fini, en voici la liste ainsi que ce qu'el
 #### Création de sous-classe pour les catégorie NBT
 
 Le [**NBT**](https://minecraft.fandom.com/fr/wiki/Format_NBT) est [**différents**](https://github.com/SilverSdt/Minegive/issues/6) pour les type d'item suivant:
+
 - block
 - fluid
 - item
@@ -188,6 +195,7 @@ A l'heure actuelle, seulement les block et les items on était fait.
 #### Création d'une classe pour les commandes
 
 La [**classe Command**](https://github.com/SilverSdt/Minegive/issues/1) permet de générer une commande, elle est créer grace à:
+
 - Un sélécteur
 - Un item
 
@@ -211,6 +219,7 @@ Les routes de l'API aurait permit d'appeler Minegive simplement avec une requêt
 Pour le déploiment facile de l'API, une [**containarisation Docker**](https://docs.docker.com/) était prévus.
 
 Les images suivants était envisager:
+
 - [Python](https://hub.docker.com/_/python): image basé sur [Ubuntu](https://hub.docker.com/_/ubuntu)
 
 #### Création d'un front-end
@@ -218,6 +227,7 @@ Les images suivants était envisager:
 Le front-end aurait permit la création simple de commande avec différents paramètres avec une interface graphique permettant une création plus intuitive.
 
 **Exemple:**
+
 - [MapMaking](https://mapmaking.fr/give1.16/)
 
 [**Django**](https://docs.djangoproject.com/en/5.0/) était envisager pour le front.
