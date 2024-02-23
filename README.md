@@ -44,7 +44,7 @@ Lien vers le projet : [Minegive](https://github.com/SilverSdt/Minegive)
 ## Auteurs
 
 - **[Jeremy Bodart](https://jeremy.bodart.dev)**
-- **[Joshua Vandaele](https://joshua.vandaele.software)**
+- **[Joshua Vandaele](https://vandaele.software)**
 
 ## Objectifs de version
 
